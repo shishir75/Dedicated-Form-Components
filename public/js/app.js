@@ -1934,6 +1934,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "AddToStream",
   data: function data() {
@@ -20222,7 +20223,14 @@ var render = function() {
                   _vm.$set(_vm.form, "body", $event.target.value)
                 }
               }
-            })
+            }),
+            _vm._v(" "),
+            _vm.form.errors.has("body")
+              ? _c("span", {
+                  staticClass: "help is-danger",
+                  domProps: { textContent: _vm._s(_vm.form.errors.get("body")) }
+                })
+              : _vm._e()
           ]),
           _vm._v(" "),
           _vm._m(0)

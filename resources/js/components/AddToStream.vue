@@ -9,6 +9,7 @@
             <form @submit.prevent="onSubmit">
                 <p class="control">
                     <textarea class="textarea" v-model="form.body" cols="30" rows="10" placeholder="I have something to say ....."></textarea>
+                    <span class="help is-danger" v-if="form.errors.has('body')" v-text="form.errors.get('body')"></span>
                 </p>
 
                 <p class="control">
