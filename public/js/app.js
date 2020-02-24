@@ -20194,6 +20194,9 @@ var render = function() {
             submit: function($event) {
               $event.preventDefault()
               return _vm.onSubmit($event)
+            },
+            keydown: function($event) {
+              return _vm.form.errors.clear()
             }
           }
         },
