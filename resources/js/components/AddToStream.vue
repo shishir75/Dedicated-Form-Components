@@ -13,7 +13,7 @@
                 </p>
 
                 <p class="control">
-                    <button class="button is-primary" style="margin-top: 10px;">Submit</button>
+                    <button class="button is-primary" :disabled="form.errors.any()" style="margin-top: 10px;">Submit</button>
                 </p>
 
             </form>
